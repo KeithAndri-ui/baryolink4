@@ -1,0 +1,29 @@
+/* Custom project styles */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    position: relative;
+    min-height: 100vh;
+    background-color: #f8fafcab; /* Fallback light background */
+}
+/* Fixed Semi-Transparent Background Image */
+body {
+    position: relative;
+    min-height: 100vh;
+    background-color: #f8fafc71; /* Fallback slate color */
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(assets/css/images/tubodhall.png); /* Adjust image path if needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15; /* Adjust opacity (0.10 to 0.20) for best text visibility */
+    pointer-events: none;
+}
