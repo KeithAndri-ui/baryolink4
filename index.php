@@ -35,7 +35,7 @@ if ($page === 'logout') {
 require_once 'config/db.php'; // Or wherever your database file is located
 
 // Include Header
-include 'includes/header.php'; // Or wherever your header code is saved
+include 'inc/header.php'; // Or wherever your header code is saved
 
 // Page Router Switch
 switch ($page) {
@@ -73,5 +73,5 @@ switch ($page) {
 }
 
 // Include Footer
-include 'includes/footer.php';
+include 'inc/footer.php';
 ?>
