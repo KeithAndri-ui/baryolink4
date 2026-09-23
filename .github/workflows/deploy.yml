@@ -3,7 +3,7 @@ name: Deploy to InfinityFree
 on:
   push:
     branches:
-      - main  # Set this to your branch name (e.g. main or master)
+      - main
 
 jobs:
   web-deploy:
@@ -19,4 +19,4 @@ jobs:
           server: ftpupload.net
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /htdocs/
+          server-dir: /baryolink2026.rf.gd/htdocs/
